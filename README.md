@@ -1,19 +1,19 @@
 # Controller-Design---PID-H_2-and-H_infinity
 Lateral Control of Autonomous Vehicles. Designed PID, 𝐻2 and 𝐻∞ controllers and trade offs in design were studied upon for real-time implementation.
 
-## VEHICLE LATERAL DYNAMICS MODEL
+## Vehicle Lateral Dynamics
 In the analysis, kinematic model is used for lateral control of vehicle dynamics. For simplifying the analysis, the vehicle motion is assumed to be planar. For the purpose of neglecting the load transfer during the vehicle motion, the direction of center of gravity is taken as along the one projected into the paper. By the planar assumptions, we require one rotation and one translation for state estimation of the vehicle. The co-ordinate system used for the analysis is shown in figure 1. The x-axis of the vehicle points in the front of the vehicle, the y-axis towards the right hand side from the perspective of the driver and z-axis by right hand rule points towards the ground.
 
 ![](fig1.JPG)
 ![](fig2.JPG)
 ![](fig3.JPG)
 
-## PID CONTROLLER DESIGN
+## PID Controller design
 The controller design using PID is a relatively extreme form of a phase lead-lag compensator design having one of the poles at origin and the other pole tending to infinity. The PI and the PD controller designs similar to PID are extreme cases of phase-lag and phase-lead compensators, respectively.
 
 ![](fig4.JPG)
 
-## H_2 controller design
+## H_2 Controller design
 The H_2 controller is designed to minimize the H_2norm of the system.  For designing the H_2 controller, the Algebraic Ricatti equation was solved. Because of separation principle, dynamics for both the controller and the observer were obtained separately. 
 
 ![](fig5.JPG)
